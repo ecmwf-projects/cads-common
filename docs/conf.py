@@ -9,17 +9,17 @@
 import os
 import sys
 
-import CADS Common
+import cads_common
 
 sys.path.insert(0, os.path.abspath("../"))
 
 # -- Project information -----------------------------------------------------
 
-project = "CADS Common"
+project = "cads_common"
 copyright = "2023, European Union"
 author = "European Union"
-version = CADS Common.__version__
-release = CADS Common.__version__
+version = cads_common.__version__
+release = cads_common.__version__
 
 # -- General configuration ---------------------------------------------------
 
@@ -37,7 +37,7 @@ extensions = [
 autodoc_typehints = "none"
 
 # autoapi configuration
-autoapi_dirs = ["../CADS Common"]
+autoapi_dirs = ["../cads_common"]
 autoapi_ignore = ["*/version.py"]
 autoapi_options = [
     "members",

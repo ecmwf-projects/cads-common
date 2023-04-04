@@ -5,7 +5,7 @@
   "context": {
     "cookiecutter": {
       "project_name": "cads-common",
-      "project_slug": "CADS Common",
+      "project_slug": "cads_common",
       "project_short_description": "Boilerplate to create a Python package based on conda-forge",
       "copyright_holder": "European Union",
       "copyright_year": "2023",

@@ -1,4 +1,4 @@
-PROJECT := CADS Common
+PROJECT := cads_common
 CONDA := conda
 CONDAFLAGS :=
 COV_REPORT := html

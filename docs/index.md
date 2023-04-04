@@ -1,4 +1,4 @@
-# Welcome to CADS Common's documentation!
+# Welcome to cads_common's documentation!
 
 Boilerplate to create a Python package based on conda-forge.
 
@@ -6,7 +6,7 @@ Boilerplate to create a Python package based on conda-forge.
 :caption: 'Contents:'
 :maxdepth: 2
 
-API Reference <_api/CADS Common/index>
+API Reference <_api/cads_common/index>
 ```
 
 # Indices and tables

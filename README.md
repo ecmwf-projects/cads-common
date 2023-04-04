@@ -5,7 +5,7 @@ Boilerplate to create a Python package based on conda-forge
 ## Quick Start
 
 ```python
->>> import CADS Common
+>>> import cads_common
 
 ```
 

@@ -1,5 +1,5 @@
-import CADS Common
+import cads_common
 
 
 def test_version() -> None:
-    assert CADS Common.__version__ != "999"
+    assert cads_common.__version__ != "999"

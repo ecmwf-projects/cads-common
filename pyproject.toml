@@ -54,10 +54,10 @@ select = [
 ]
 
 [tool.setuptools]
-packages = ["CADS Common"]
+packages = ["cads_common"]
 
 [tool.setuptools_scm]
-write_to = "CADS Common/version.py"
+write_to = "cads_common/version.py"
 write_to_template = '''
 # Do not change! Do not track in version control!
 __version__ = "{version}"
