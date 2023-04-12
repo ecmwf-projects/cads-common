@@ -1,7 +1,7 @@
 import structlog
 
 
-def config_logging(additional_processors: list):
+def config_logging(additional_processors: list = []):
     structlog.configure(
         processors=[
             structlog.stdlib.filter_by_level,
