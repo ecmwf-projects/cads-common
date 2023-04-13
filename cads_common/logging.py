@@ -24,7 +24,7 @@ def config_logging(additional_processors: list = []):
     )
 
 
-def configure_logger():
+def configure_logger() -> None:
     """Configure the logger."""
     logging.basicConfig(
         level=logging.INFO,
