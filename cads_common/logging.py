@@ -1,7 +1,11 @@
+import logging
+import sys
+
 import structlog
 
 
 def config_logging(additional_processors: list = []):
+    """Configure logging."""
     structlog.configure(
         processors=[
             structlog.stdlib.filter_by_level,
@@ -17,4 +21,13 @@ def config_logging(additional_processors: list = []):
         wrapper_class=structlog.stdlib.BoundLogger,
         logger_factory=structlog.stdlib.LoggerFactory(),
         cache_logger_on_first_use=True,
+    )
+
+
+def configure_logger():
+    """Configure the logger."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(message)s",
+        stream=sys.stdout,
     )
