@@ -1,12 +1,12 @@
 import logging
-import sys
 import os
+import sys
 
 import structlog
 
 
-def config_logging(additional_processors: list = []):
-    """Configure logging."""
+def structlog_configure(additional_processors: list = []):
+    """Configure structlog logging."""
     structlog.configure(
         processors=[
             structlog.stdlib.filter_by_level,
@@ -25,8 +25,8 @@ def config_logging(additional_processors: list = []):
     )
 
 
-def configure_logger(level: str = "INFO") -> None:
-    """Configure the logger."""
+def logging_configure(level: str = "INFO") -> None:
+    """Configure the logging basic config."""
     level = os.getenv("CADS_LOGGING_LEVEL", level)
     logging_level = logging.getLevelName(level)
     if not isinstance(logging_level, int):
