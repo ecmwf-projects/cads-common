@@ -25,7 +25,7 @@ def structlog_configure(additional_processors: list = []):
     )
 
 
-def logging_configure(level: str = "INFO") -> None:
+def logging_configure(level: str = "INFO", format: str = "%(message)s") -> None:
     """Configure the logging basic config."""
     level = os.getenv("CADS_LOGGING_LEVEL", level)
     logging_level = logging.getLevelName(level)
@@ -33,6 +33,6 @@ def logging_configure(level: str = "INFO") -> None:
         logging_level = logging.INFO
     logging.basicConfig(
         level=logging_level,
-        format="%(message)s",
+        format=format,
         stream=sys.stdout,
     )
