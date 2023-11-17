@@ -9,7 +9,7 @@
       "project_short_description": "Boilerplate to create a Python package based on conda-forge",
       "copyright_holder": "European Union",
       "copyright_year": "2023",
-      "mypy_strict": "False",
+      "mypy_strict": "True",
       "integration_tests": "False",
       "_template": "https://github.com/ecmwf-projects/cookiecutter-conda-package"
     }

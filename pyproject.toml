@@ -23,7 +23,7 @@ readme = "README.md"
 branch = true
 
 [tool.mypy]
-strict = false
+strict = true
 
 [tool.ruff]
 ignore = [
