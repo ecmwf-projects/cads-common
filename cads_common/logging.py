@@ -6,7 +6,7 @@ import structlog
 
 
 def structlog_configure(
-    additional_processors: list[structlog.typing.Processor] = []
+    additional_processors: list[structlog.typing.Processor] = [],
 ) -> None:
     """Configure structlog logging."""
     structlog.configure(
