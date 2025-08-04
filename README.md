@@ -1,19 +1,21 @@
 # cads-common
 
-Boilerplate to create a Python package based on conda-forge
+Common utilities shared amongs EDSS packages.
 
-## Quick Start
+## What's inside
 
-```python
->>> import cads_common
-
-```
+- `logging.structlog_configure`\
+  Common `tructlog` configuration to be applied to all packages.
+- `logging.logging_configure`\
+  Common Python configuration to be applied to all packages.
+- `portal.get_site_url`\
+  Get current site URL value interpolating input `portal` header value and some K8S envars.
 
 ## Workflow for developers/contributors
 
 For best experience create a new conda environment (e.g. DEVELOP) with Python 3.11:
 
-```
+```bash
 conda create -n DEVELOP -c conda-forge python=3.11
 conda activate DEVELOP
 ```
@@ -30,7 +32,7 @@ Before pushing to GitHub, run the following commands:
 
 ## License
 
-```
+```plain
 Copyright 2023, European Union.
 
 Licensed under the Apache License, Version 2.0 (the "License");
