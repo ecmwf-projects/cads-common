@@ -15,7 +15,7 @@ classifiers = [
 dependencies = [
   "structlog"
 ]
-description = "Boilerplate to create a Python package based on conda-forge"
+description = "Common utilities shared amongs EDSS packages."
 dynamic = ["version"]
 license = {file = "LICENSE"}
 name = "cads-common"
