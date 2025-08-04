@@ -25,6 +25,9 @@ readme = "README.md"
 branch = true
 
 [tool.mypy]
+exclude = [
+  "tests/"
+]
 strict = true
 
 [tool.ruff]
