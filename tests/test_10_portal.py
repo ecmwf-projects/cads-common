@@ -1,7 +1,9 @@
 import os
 from unittest.mock import patch
+
 import pytest
-from cads_common.portal import get_site_url, FALLBACK_PORTAL_URLS, PORTALS_TO_SITES
+
+from cads_common.portal import FALLBACK_PORTAL_URLS, PORTALS_TO_SITES, get_site_url
 
 
 def test_get_site_url_with_valid_portal_and_env_var():
