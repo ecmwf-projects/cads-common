@@ -6,6 +6,7 @@ Boilerplate to create a Python package based on conda-forge.
 :caption: 'Contents:'
 :maxdepth: 2
 
+README.md
 API Reference <_api/cads_common/index>
 ```
 
