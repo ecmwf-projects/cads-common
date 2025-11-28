@@ -1,0 +1,22 @@
+name: Update packages that depends on cads-common
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - "v*"
+
+
+jobs:
+  update-downstream-packages:
+    name: Pull request to update packages
+    uses: ecmwf-projects/cads-build-farm/.github/workflows/update-downstream-packages.yaml@main
+    with:
+      package-ref: "CADS_COMMON_REF"
+      repositories: |
+        ecmwf-projects/cads-catalogue-api-service
+        ecmwf-projects/cads-extended-profiles
+        ecmwf-projects/cads-processing-api-service
+        ecmwf-projects/cads-worker
+        ecmwf/dss-operations-chart
+    secrets: inherit
